@@ -224,3 +224,82 @@ const sampleDataJson =
 
 
 ```
+
+output
+
+```
+{ entities: 
+   { price: 
+      { '16484264': [Object],
+        '35206247': [Object],
+        '63114064': [Object],
+        '75971013': [Object],
+        '-70437687': [Object],
+        '-7716169': [Object],
+        '-46947865': [Object],
+        '-12943343': [Object] },
+     arms: 
+      { '83336186': [Object],
+        '-3981952': [Object],
+        '-45330412': [Object] },
+     item: 
+      { '547206': [Object],
+        '30994464': [Object],
+        '31524891': [Object],
+        '-72935767': [Object],
+        '-30853010': [Object] },
+     human: { '46724329': [Object] },
+     humans: { undefined: [Object] } },
+  result: undefined }
+
+  1 passed
+[ 11/12/17 local-mac ~/project/201706/normarize-swagger] npm test                                                                                                                                                       [ master ]
+
+> normarize-swagger@1.0.0 test /Users/fushiminaoto/project/201706/normarize-swagger
+> ava
+
+{ entities: 
+   { price: 
+      { '16484264': { id: 16484264, price: 52852108 },
+        '35206247': { id: 35206247, price: 46101232 },
+        '63114064': { id: 63114064, price: -44429984 },
+        '75971013': { id: 75971013, price: 38947278 },
+        '-70437687': { id: -70437687, price: 60336961 },
+        '-7716169': { id: -7716169, price: -10777821 },
+        '-46947865': { id: -46947865, price: -50355682 },
+        '-12943343': { id: -12943343, price: 22499745 } },
+     arms: 
+      { '83336186': 
+         { id: 83336186,
+           name: 'labore adipisicing comm',
+           attack: 76487197,
+           price: 16484264 },
+        '-3981952': 
+         { id: -3981952,
+           name: 'commodo null',
+           attack: -18978701,
+           price: 63114064 },
+        '-45330412': 
+         { id: -45330412,
+           name: 'ex culpa cupidatat nisi dolore',
+           attack: -93922819,
+           price: -70437687 } },
+     item: 
+      { '547206': { id: 547206, item_type: 35936131, price: -12943343 },
+        '30994464': { id: 30994464, item_type: 41652135, price: 75971013 },
+        '31524891': { id: 31524891, item_type: -65025204, price: -7716169 },
+        '-72935767': { id: -72935767, item_type: 31782830, price: -46947865 },
+        '-30853010': { id: -30853010, item_type: -64756983, price: 35206247 } },
+     human: 
+      { '46724329': 
+         { id: 46724329,
+           name: 'et ad sit non Lorem',
+           speed: -89732341,
+           arms: [ -3981952, 83336186, -45330412 ],
+           items: [ 31524891, 30994464, -72935767, 547206, -30853010 ] } },
+     humans: { undefined: { humans: [ 46724329 ] } } },
+  result: undefined }
+
+
+
+```

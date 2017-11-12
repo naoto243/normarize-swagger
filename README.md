@@ -230,36 +230,6 @@ output
 ```
 { entities: 
    { price: 
-      { '16484264': [Object],
-        '35206247': [Object],
-        '63114064': [Object],
-        '75971013': [Object],
-        '-70437687': [Object],
-        '-7716169': [Object],
-        '-46947865': [Object],
-        '-12943343': [Object] },
-     arms: 
-      { '83336186': [Object],
-        '-3981952': [Object],
-        '-45330412': [Object] },
-     item: 
-      { '547206': [Object],
-        '30994464': [Object],
-        '31524891': [Object],
-        '-72935767': [Object],
-        '-30853010': [Object] },
-     human: { '46724329': [Object] },
-     humans: { undefined: [Object] } },
-  result: undefined }
-
-  1 passed
-[ 11/12/17 local-mac ~/project/201706/normarize-swagger] npm test                                                                                                                                                       [ master ]
-
-> normarize-swagger@1.0.0 test /Users/fushiminaoto/project/201706/normarize-swagger
-> ava
-
-{ entities: 
-   { price: 
       { '16484264': { id: 16484264, price: 52852108 },
         '35206247': { id: 35206247, price: 46101232 },
         '63114064': { id: 63114064, price: -44429984 },

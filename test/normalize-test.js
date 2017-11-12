@@ -1,9 +1,9 @@
 import test from 'ava';
 import { denormalize, schema , normalize} from 'normalizr';
 import swaggerNormarizer from "../index";
+const util = require("util");
 
 test(t => {
-    t.deepEqual([1, 2], [1, 2]);
 
     const normilizeSetting = swaggerNormarizer(sampleJsonSchema);
     const normalizedData = normalize(sampleDataJson.example, normilizeSetting.humans);
@@ -14,7 +14,9 @@ test(t => {
     t.true(normalizedData.entities.human != null)
     t.true(normalizedData.entities.humans != null)
 
-    console.log(normalizedData)
+
+    console.log(util.inspect(normalizedData,false,null));
+
 
 
 });

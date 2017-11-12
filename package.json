@@ -1,0 +1,26 @@
+{
+  "name": "normarize-swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "build": "./node_modules/.bin/tsc index.ts",
+    "watch": "./node_modules/.bin/tsc --watch index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "normalizr": "^3.2.4"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "typescript": "^2.6.1"
+  },
+  "ava" : {
+    "files": [
+      "test/*-test.js"
+    ]
+  }
+}

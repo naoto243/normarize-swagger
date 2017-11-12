@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "es6",
+    "sourceMap" : true, 
+    "target" : "es5",
+    "allowJs" : true,
+    "pretty" : true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "skipLibCheck": true,     // ビルド高速化（型定義内の型チェック無効化）
+    "alwaysStrict" : true,
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2015",// 使用する標準型定義の指定（ target が ES5, ES2015 以外の場合に必要）
+      "es2016",
+      "es2017",
+      "dom",
+      "scripthost"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "htdocs"
+  ]
+}
+
+
+
+

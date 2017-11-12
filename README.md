@@ -1,6 +1,6 @@
 # normarize-swagger
 
-schema generator for [normalizr](paularmstrong/normalizr) by swagger/json schema.
+schema generator for [normalizr](https://github.com/paularmstrong/normalizr) by swagger/json schema.
 
 ## usage
 
